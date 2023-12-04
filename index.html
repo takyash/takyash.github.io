@@ -8,7 +8,60 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <!-- Your content goes here -->
+    <header id="home">
+        <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+            <span class="icon moon"></span>
+            <span class="icon sun"></span>
+        </div>
+        <div class="header-content">
+            <h1>Your Name</h1>
+            <p>iOS Developer</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>Hi, I'm [Your Name], an experienced iOS developer passionate about creating innovative and user-friendly mobile applications.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of your first project. Highlight key features and technologies used.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of your second project. Showcase your skills and achievements.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-content">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me through the following channels:</p>
+            <ul>
+                <li>Email: your.email@example.com</li>
+                <li>LinkedIn: linkedin.com/in/yourname</li>
+                <li>GitHub: github.com/yourusername</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Name - iOS Developer</p>
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+        }
+    </script>
 </body>
 </html>
